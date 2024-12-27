@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cliente</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <h1>Formulario de Cliente</h1>
+    <form action="#" method="POST">
+        <!-- Campo de Nombre y Apellido -->
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre y apellido" required>
+
+        <!-- Campo de Número de Teléfono -->
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+
+        <!-- Campo de Dirección -->
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Escribe tu dirección completa" required>
+
+        <!-- Campo de Cómo Encontró la Tienda -->
+        <label for="encuentro">¿Cómo nos encontraste?</label>
+        <select id="encuentro" name="encuentro" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="whatsapp">WhatsApp</option>
+            <option value="instagram">Instagram</option>
+            <option value="personalmente">Personalmente</option>
+            <option value="contacto">A través de un contacto</option>
+        </select>
+
+        <!-- Botón de Enviar -->
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div class="nota">Tus datos serán tratados de forma confidencial.</div>
+
+</body>
+</html>
+
+</body>
+</html>

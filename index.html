@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>YleMax</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+    <div class="logo">
+        <img src="https://img.freepik.com/vector-gratis/plantilla-logotipo-barbacoa-creativa-detalles_23-2149010380.jpg?t=st=1734725424~exp=1734729024~hmac=d8cc6b0860f555f9e4080b3cd8d22bcf5fde09f7bd140999a0c928b3635e41f3&w=740" alt="Logo de la Tienda" id="logo"/>
+    </div>
+    <div class="mensaje">
+        <h1>¡Bienvenido! Explora nuestros productos y agrégalos a tu carrito.</h1>
+    </div>
+    <nav> 
+        <ul>
+            <li>
+                <a class="btn-productos" href="#productos">Productos</a>
+            </li> 
+            <li>
+                <a class="btn-carrito" href="#carrito">Ver Carrito</a>
+            </li>
+        </ul> 
+        </nav> 
+    </header>
+
+<section id="productos">
+    <!-- Aquí van los productos -->
+
+    <!-- Botón para alternar entre modo claro y oscuro -->
+    <button class="toggleButton" onclick="cambiarModo()">Cambiar a Modo Oscuro</button>
+
+    <div class="productos">
+        <!-- Producto 1 -->
+        <div class="product-card card1">
+            <img src="../precios para empresa/img/salami2.5.jfif" alt="" class="ft-card">
+            <h3>Salami </h3>
+            <p>Barra de salami 2.5 libras</p>
+            <p class="price">$160.00</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card card2">
+            <img src="../precios para empresa/img/salami3.5.jfif" alt="" class="ft-card">
+            <h3>Salami </h3>
+            <p> Barra salami de 3.5 libras.</p>
+            <p class="price">$300.00</p>
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card card3">
+            <img src="../precios para empresa/img/res.jfif" alt="" class="ft-card">
+            <h3>Salami de res </h3>
+            <p>Barra de salami de res 2 libras .</p>
+            <p class="price">$275.00</p>
+            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card card4">
+            <img src="../precios para empresa/img/jamoneta.jfif" alt="" class="ft-card">
+            <h3>Jamoneta</h3>
+            <p>Barra de Jamoneta 2 libras.</p>
+            <p class="price">$175.00</p>
+            <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+        </div>
+        <!-- Producto 4 -->
+        <div class="product-card card5">
+            <img src="../precios para empresa/img/jamonada.jfif" alt="" class="ft-card">
+            <h3>Jamonada </h3>
+            <p>Barra de Jamonada 2 libras.</p>
+            <p class="price">$215.00</p>
+            <button onclick="agregarAlCarrito(5)">Agregar al carrito</button>
+        </div>
+        <!-- Producto 5 -->
+        <div class="product-card card6">
+            <img src="../precios para empresa/img/salmi g de toro.jfif" alt="" class="ft-card">
+            <h3>Grano de toro </h3>
+            <p>Barra de salami grano de toro.</p>
+            <p class="price">$125.00</p>
+            <button onclick="agregarAlCarrito(6)">Agregar al carrito</button>
+        </div>
+        <!-- Producto 6 -->
+        <div class="product-card card7">
+            <img src="../precios para empresa/img/salchichas.jfif" alt="" class="ft-card">
+            <h3>Salchichas</h3>
+            <p>Pack de salchichas 8/1.</p>
+            <p class="price">$115.00</p>
+            <button onclick="agregarAlCarrito(7)">Agregar al carrito</button>
+        </div>
+        <!-- Producto 7 -->
+        <div class="product-card card8">
+            <img src="../precios para empresa/img/longaniza ranchera.jfif" alt="" class="ft-card">
+            <h3>Longaniza </h3>
+            <p>Barra de longaniza Ranchera 1 libra </p>
+            <p class="price">$125.00</p>
+            <button onclick="agregarAlCarrito(8)">Agregar al carrito</button>
+        </div>
+        <!-- Producto 8 -->
+        <div class="product-card card9">
+            <img src="../precios para empresa/img/longaniza casera.jfif" alt="" class="ft-card">
+            <h3>Longaniza </h3>
+            <p>barra de longaniza Casera 1 libra</p>
+            <p class="price">$150.00</p>
+            <button onclick="agregarAlCarrito(9)">Agregar al carrito</button>
+        </div>
+        <!-- Producto 10 -->
+        <div class="product-card card10">
+            <img src="../precios para empresa/img/jamon.jfif" alt="" class="ft-card">
+            <h3>Jamón de 5 libras </h3>
+            <p>Barra de Jamón de 5 libras.</p>
+            <p class="price">$495.00</p>
+            <button onclick="agregarAlCarrito(10)">Agregar al carrito</button>
+        </div>
+
+    </section>
+
+        <!-- Agregar más productos según sea necesario -->
+    </div>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="listaCarrito"></ul>
+            <div id="total">
+                <h3>Total: $<span id="totalCarrito">0.00</span></h3>
+            </div>
+            <button id="vaciarCarrito" onclick="vaciarCarrito()">Vaciar carrito</button>
+            <button id="comprarCarrito" onclick="comprarCarrito()">Comprar</button>
+        </div>
+<!-- volver a arriba -->
+        <button class="arriba-btt">
+            <a class="arriba-link" href="#header">volver a arriba</a>
+        </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
