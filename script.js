@@ -17,8 +17,8 @@ let carrito = [];
 
 // Lista de productos (puedes personalizarlos o agregar más)
 let productos = [
-    { id: 1, nombre: "Salami 2 Lb", precio: 160.00 },
-    { id: 2, nombre: "Salami 3.5 Lb", precio: 300.00 },
+    { id: 1, nombre: "Salami 2.5 Lb", precio: 195.00 },
+    { id: 2, nombre: "Salami 3.5 Lb", precio: 295.00 },
     { id: 3, nombre: "Salami de res 2 Lb", precio: 300.00 },
     { id: 4, nombre: "Jamoneta 2 Lb", precio: 275.00 },
     { id: 5, nombre: "Jamonada 2 Lb", precio: 175.00 },
